@@ -1,0 +1,178 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background: linear-gradient(135deg, #f8f5ee 0%, #f3eee3 50%, #ede6d8 100%);
+    color: #2c241e;
+    min-height: 100vh;
+    overflow-x: hidden;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  code, pre, .font-mono {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+/* Minimal Claymorphism Light Card Utility */
+.clay-card {
+  background: rgba(255, 255, 255, 0.94);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(229, 224, 212, 0.9);
+  border-radius: 1.5rem;
+  box-shadow: 
+    8px 12px 24px rgba(28, 25, 23, 0.04),
+    -6px -6px 18px rgba(255, 255, 255, 0.95),
+    inset 2px 2px 4px rgba(255, 255, 255, 0.9),
+    inset -3px -3px 6px rgba(217, 210, 190, 0.15);
+  transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.clay-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 
+    10px 16px 30px rgba(28, 25, 23, 0.07),
+    -8px -8px 22px rgba(255, 255, 255, 1),
+    inset 2px 2px 4px rgba(255, 255, 255, 0.95),
+    inset -3px -3px 6px rgba(217, 210, 190, 0.2);
+}
+
+/* Claymorphism Dark Technical Card Utility (For Operations View) */
+.clay-card-dark {
+  background: rgba(24, 24, 27, 0.94);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 1.25rem;
+  box-shadow: 
+    8px 12px 24px rgba(0, 0, 0, 0.4),
+    -6px -6px 16px rgba(39, 39, 42, 0.3),
+    inset 2px 2px 4px rgba(63, 63, 70, 0.25),
+    inset -3px -3px 6px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease;
+}
+
+.clay-card-dark:hover {
+  transform: translateY(-2px);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Sleek Jet Black Clay Button */
+.clay-btn-black {
+  background: linear-gradient(135deg, #27272a 0%, #09090b 100%);
+  color: #ffffff;
+  border-radius: 1rem;
+  box-shadow: 
+    4px 6px 14px rgba(9, 9, 11, 0.25),
+    -3px -3px 8px rgba(255, 255, 255, 0.6),
+    inset 1.5px 1.5px 3px rgba(255, 255, 255, 0.25),
+    inset -1.5px -1.5px 3px rgba(0, 0, 0, 0.4);
+  transition: all 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.clay-btn-black:hover {
+  background: linear-gradient(135deg, #3f3f46 0%, #18181b 100%);
+  transform: translateY(-1.5px) scale(1.01);
+  box-shadow: 
+    6px 9px 18px rgba(9, 9, 11, 0.32),
+    -4px -4px 10px rgba(255, 255, 255, 0.7);
+}
+
+.clay-btn-black:active {
+  transform: translateY(1px) scale(0.98);
+}
+
+/* Warm Beige Clay Button */
+.clay-btn-beige {
+  background: linear-gradient(135deg, #f5f2e9 0%, #e9e4d4 100%);
+  color: #18181b;
+  border: 1px solid rgba(217, 210, 190, 0.6);
+  border-radius: 1rem;
+  box-shadow: 
+    3px 5px 12px rgba(28, 25, 23, 0.05),
+    -3px -3px 8px rgba(255, 255, 255, 0.9),
+    inset 1.5px 1.5px 3px rgba(255, 255, 255, 0.8),
+    inset -1.5px -1.5px 3px rgba(217, 210, 190, 0.25);
+  transition: all 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.clay-btn-beige:hover {
+  background: linear-gradient(135deg, #ffffff 0%, #ede8d8 100%);
+  transform: translateY(-1.5px);
+}
+
+/* Clay Input */
+.clay-input {
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid rgba(229, 224, 212, 0.9);
+  border-radius: 0.875rem;
+  box-shadow: 
+    inset 2px 2px 4px rgba(217, 210, 190, 0.15),
+    inset -2px -2px 4px rgba(255, 255, 255, 0.9);
+  transition: all 0.2s ease;
+}
+
+.clay-input:focus {
+  outline: none;
+  border-color: #18181b;
+  background: #ffffff;
+  box-shadow: 
+    0 0 0 3px rgba(24, 24, 27, 0.08),
+    inset 2px 2px 4px rgba(217, 210, 190, 0.1);
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+::-webkit-scrollbar-track {
+  background: #f5f2e9;
+}
+::-webkit-scrollbar-thumb {
+  background: #d9d2be;
+  border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #c5baa2;
+}
+
+/* Leaflet Map Custom Train Marker Animation */
+.leaflet-div-icon {
+  background: transparent !important;
+  border: none !important;
+}
+
+.custom-train-marker {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.train-pulse-ring {
+  position: absolute;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: rgba(24, 24, 27, 0.2);
+  animation: pulseRing 2s cubic-bezier(0.45, 0, 0.55, 1) infinite;
+}
+
+@keyframes pulseRing {
+  0% {
+    transform: scale(0.6);
+    opacity: 0.85;
+  }
+  100% {
+    transform: scale(2.2);
+    opacity: 0;
+  }
+}
+
+

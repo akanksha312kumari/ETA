@@ -1,0 +1,31 @@
+{
+  "is_synthetic_data": true,
+  "evaluation_dataset": "Indian Railways Historical Train Delay (Synthetic Evaluation)",
+  "test_samples": 10,
+  "models": {
+    "mathematical_baseline": {
+      "name": "Mathematical Baseline",
+      "mae": 2.24,
+      "rmse": 2.674,
+      "r2_score": 0.894
+    },
+    "xgboost_only": {
+      "name": "XGBoost-Only Direct Predictor",
+      "mae": 2.678,
+      "rmse": 3.862,
+      "r2_score": 0.779
+    },
+    "hybrid_math_xgboost": {
+      "name": "Hybrid (Mathematical + XGBoost Residual)",
+      "mae": 0.502,
+      "rmse": 0.623,
+      "r2_score": 0.994
+    },
+    "hybrid_delay_scipy": {
+      "name": "Hybrid + Delay Propagation & SciPy Constraint Optimization",
+      "mae": 0.636,
+      "rmse": 0.717,
+      "r2_score": 0.992
+    }
+  }
+}
