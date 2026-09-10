@@ -248,14 +248,17 @@ export default function PassengerView({
     return Math.round((val || 0) * 10) / 10;
   }
 
-  // Ref for auto-scrolling to live train location on vertical tracker
+  // Ref for live train location on vertical tracker
   const trainIconRef = useRef(null);
 
+  // Auto-scroll disabled to prevent disrupting user scroll behavior on telemetry updates
+  /*
   useEffect(() => {
     if (trainIconRef.current) {
       trainIconRef.current.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
     }
-  }, [cumKm, selectedTrainNo]);
+  }, [selectedTrainNo]);
+  */
 
   return (
     <div className="max-w-7xl mx-auto space-y-8 pb-16 text-[#2c241e]">
