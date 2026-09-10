@@ -14,7 +14,7 @@ with SessionLocal() as db_session:
     seed_database(db_session)
 
 app = FastAPI(
-    title="SIH26028 - Dynamic Train ETA Engine API",
+    title="Train ETA API",
     description="Backend API with WebSockets, RTIS Simulator & Real-time Kafka Streaming Layer for Coaching Trains",
     version="6.0.0"
 )

@@ -163,7 +163,7 @@ class RailRadarService:
             req = urllib.request.Request(
                 api_url,
                 headers={
-                    "User-Agent": "SIH26028-DynamicTrainETA/1.0",
+                    "User-Agent": "TrainETA/1.0",
                     "X-Api-Key": RAILRADAR_API_KEY
                 }
             )
@@ -223,7 +223,7 @@ class RailRadarService:
             req = urllib.request.Request(
                 api_url,
                 headers={
-                    "User-Agent": "SIH26028-DynamicTrainETA/1.0",
+                    "User-Agent": "TrainETA/1.0",
                     "X-Api-Key": RAILRADAR_API_KEY
                 }
             )

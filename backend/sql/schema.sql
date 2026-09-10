@@ -1,4 +1,4 @@
--- PostgreSQL / Supabase Schema for SIH26028 - Dynamic Forecast ETA Engine
+-- PostgreSQL / Supabase Schema for Train ETA Engine
 
 CREATE TABLE IF NOT EXISTS stations (
     id SERIAL PRIMARY KEY,

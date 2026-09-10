@@ -206,7 +206,7 @@ export default function App() {
                 <h1 className={`text-2xl font-black tracking-tight ${
                   activeView === 'passenger' ? 'text-[#2c241e]' : 'text-white'
                 }`}>
-                  Dynamic Train ETA Engine
+                  Train ETA
                 </h1>
                 <span className={`text-xs px-3.5 py-1 rounded-full font-mono font-extrabold tracking-wide transition-all ${
                   simStatus && simStatus.is_running 
@@ -219,7 +219,7 @@ export default function App() {
               <p className={`text-xs md:text-sm ${
                 activeView === 'passenger' ? 'text-[#6e5d4f] font-semibold' : 'text-zinc-400'
               }`}>
-                SIH 2026 Problem Statement SIH26028 • Corridor Real-Time ETA Predictor
+                Corridor Real-Time ETA Predictor
               </p>
             </div>
           </div>

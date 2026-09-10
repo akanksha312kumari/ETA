@@ -1,16 +1,14 @@
-# Dynamic Forecast of Expected Time of Arrival (ETA) for Coaching Trains
-**SIH 2026 Problem Statement SIH26028** | **Team BongoCoders**
+# Train ETA - Real-Time Train ETA Prediction Engine
 
 ---
 
 ## 📌 Project Overview
-This repository contains Part 1 (Project Foundation) of the **Hybrid ETA Engine** for Coaching Trains in Indian Railways. The solution combines mathematical section modeling, XGBoost residual ML correction, graph-based delay propagation, and constraint optimization to deliver dynamic, high-accuracy ETA predictions.
+This repository contains the **Train ETA Engine** for Coaching Trains. The solution combines mathematical section modeling, XGBoost residual ML correction, graph-based delay propagation, and constraint optimization to deliver dynamic, high-accuracy ETA predictions.
 
 ---
 
 ## 📁 Repository Structure
 ```
-/SIH
 ├── /backend
 │   ├── /app
 │   │   ├── /db          # SQLAlchemy database engine, ORM models, and seed script

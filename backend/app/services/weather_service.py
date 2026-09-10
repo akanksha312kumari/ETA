@@ -67,7 +67,7 @@ class WeatherService:
         api_url = f"https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lng}&appid={OPENWEATHER_API_KEY}&units=metric"
 
         try:
-            req = urllib.request.Request(api_url, headers={"User-Agent": "SIH26028-DynamicTrainETA/1.0"})
+            req = urllib.request.Request(api_url, headers={"User-Agent": "TrainETA/1.0"})
             with urllib.request.urlopen(req, timeout=4.0) as res:
                 if res.status == 200:
                     raw = json.loads(res.read().decode("utf-8"))

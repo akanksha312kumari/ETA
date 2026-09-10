@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-DATABASE_URL = os.getenv("DATABASE_URL", "sqlite:///./sih_eta.db")
+DATABASE_URL = os.getenv("DATABASE_URL", "sqlite:///./train_eta.db")
 
 # For SQLite, check_same_thread needs to be False
 connect_args = {}

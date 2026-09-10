@@ -94,12 +94,12 @@ export default function OperationsView({
         </div>
       </div>
 
-      {/* SIH DEMO FLOW STEPPER BAR */}
+      {/* DEMO FLOW STEPPER BAR */}
       <div className="clay-card-dark p-5 space-y-4">
         <div className="flex items-center justify-between border-b border-neutral-800 pb-3">
           <h3 className="text-xs uppercase tracking-wider text-zinc-300 font-black flex items-center gap-2">
             <Sparkles className="w-4 h-4 text-zinc-200" />
-            SIH 2026 Live Demonstration Workflow Stepper
+            Train ETA Live Demonstration Workflow Stepper
           </h3>
           <span className="text-[11px] font-mono text-emerald-400 bg-emerald-500/10 px-3 py-1 rounded-full border border-emerald-500/30 font-bold">
             Interactive Technical Demonstration
